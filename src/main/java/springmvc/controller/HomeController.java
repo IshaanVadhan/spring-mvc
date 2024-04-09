@@ -20,6 +20,10 @@ public class HomeController {
 		model.addAttribute("name", "Ishaan Vadhan");
 		model.addAttribute("id", 41074);
 
+//		Eexception created
+		String str = "abc";
+		Integer.parseInt(str);
+
 		List<String> friends = new ArrayList<String>();
 		friends.add("Parth");
 		friends.add("Abhishek");
