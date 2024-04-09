@@ -64,4 +64,10 @@
 	</bean>
 	<bean name="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/first/help" />
+			<bean class="springmvc.controller.MyInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>
